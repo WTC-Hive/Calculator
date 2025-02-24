@@ -96,12 +96,4 @@ def evaluate_expression(expression):
     The expression is a string, e.g., "3 / 7 * 8 % 3".
     This function will call other calculator functions in the correct order.
     """
-    try:
-        # Step 1: Handle parentheses (if any)
-        # Step 2: Evaluate exponents (if any)
-        # Step 3: Evaluate multiplication, division, and modulus (left to right)
-        # Step 4: Evaluate addition and subtraction (left to right)
-        pass
-    # Handle more exceptions here if needed
-    except Exception as e:
-        return f"Error: {str(e)}"
+    pass
