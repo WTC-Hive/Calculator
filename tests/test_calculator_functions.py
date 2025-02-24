@@ -1,5 +1,5 @@
 import pytest
-from calculator_functions import add, subtract, multiply, divide, sqrt, modulus, exponent
+from backend import add, subtract, multiply, divide, sqrt, modulus, exponent
 
 def test_add():
     assert add(2, 3) == 5
