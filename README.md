@@ -91,4 +91,4 @@ pytest tests/test_calculator_functions.py
 
 ---
 
-Co-authored-by: Co-authored-by: Qiniso Xulu \<qiniso.nhlakanipho.xulu\@gmail.com>
+Co-authored-by: Qiniso Xulu <qiniso.nhlakanipho.xulu@gmail.com>
