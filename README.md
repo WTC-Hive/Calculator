@@ -1,6 +1,9 @@
-# Calculator CLI App
+# Calculator Flet App
 
-Welcome to the Calculator CLI App project! In this project, you will implement a command-line calculator with basic and advanced mathematical functions. A basic, yet powerful calculator app built using Python. This project demonstrates the use of fundamental programming concepts such as functions, conditionals, and loops. It allows users to perform basic arithmetic operations including addition, subtraction, multiplication, division and more.
+![Calculator App on Localhost](calculator.png)
+
+Welcome to the Calculator Flet project! In this project, you will implement a command-line calculator with basic and advanced mathematical functions. A basic, yet powerful calculator app built using Python. This project demonstrates the use of fundamental programming concepts such as functions, conditionals, and loops. It allows users to perform basic arithmetic operations including addition, subtraction, multiplication, division and more.
+
 
 ## Instructions
 
@@ -12,36 +15,85 @@ Welcome to the Calculator CLI App project! In this project, you will implement a
 
    - Clone your forked repository to your local machine:
      ```bash
-     git clone https://github.com/YOUR_USERNAME/calculator-cli-app.git
+     git clone https://github.com/YOUR_USERNAME/Calculator.git
+     cd Calculator
      ```
 
-3. **Create a Branch**:
+3. **Implement the Functions**:
 
-   - Create a branch with your name (e.g., `MbaliP`):
-     ```bash
-     git checkout -b YOUR_NAME
-     ```
-
-4. **Implement the Functions**:
-
-   - Open `calculator_functions.py` and implement the functions as described in the docstrings.
+   - Open `backend.py` and implement the functions as described in the docstrings.
    - Test your implementation using the provided unit tests.
 
-5. **Run the Tests**:
+4. **Project Setup**:
 
-   - Install `pytest` if you don't have it
-     on Windows:
-     ```bash
-     pip install pytest
-     ```
-     on Mac/Linux:
-     ```bash
-     sudo apt install python3-pytest
-     ```
+    ### 1. Create the Virtual Environment  
+    Run the following command in your project's root directory:
+
+    #### On Windows:
+    ```sh
+    python -m venv venv
+    ```
+
+    #### On macOS/Linux:
+    ```sh
+    python3 -m venv venv
+    ```
+
+    This will create a new folder named `venv`, which contains a clean Python environment.
+
+    ---
+
+    ### 2. Activate the Virtual Environment  
+    Before installing dependencies, you need to activate the virtual environment.
+
+    #### On Windows (Command Prompt):
+    ```sh
+    venv\Scripts\activate
+    ```
+
+    #### On Windows (PowerShell):
+    ```sh
+    venv\Scripts\Activate.ps1
+    ```
+
+    #### On macOS/Linux:
+    ```bash
+    source venv/bin/activate
+    ```
+
+    Once activated, your terminal prompt should show `(venv)`, indicating that the virtual environment is active.
+
+    ---
+
+    ### 3. Install Dependencies from `requirements.txt`  
+    Now, install everything listed in `requirements.txt`:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+    ---
+
+    ### 4. Verify Installation  
+    To confirm that `pytest` and `flet` were installed correctly, run:
+
+    ```sh
+    pip list
+    ```
+    This should display pytest, flet.
+
    - Run the tests:
      ```bash
      python3 -m pytest
      ```
+     If all tests pass, they should appear like this:
+     ![Test Cases](testcases.png)
+
+   - Run frontend on 127.0.0.1 on your web browser i.e Chrome or Firecox:
+     ```bash
+     python3 frontend.py
+     ```
+     Try typing complex calculations  to test your application.
 
 6. **Commit and Push Your Changes**:
 
@@ -55,7 +107,7 @@ Welcome to the Calculator CLI App project! In this project, you will implement a
      ```
    - Push your changes to your branch:
      ```bash
-     git push origin YOUR_NAME
+     git push origin main
      ```
 
 7. **Submit a Pull Request**:
@@ -80,9 +132,9 @@ pytest tests/test_calculator_functions.py
 #### Important Notes
 
 ```
-- Only submissions from branches named after the student (e.g., john-doe) will be accepted.
+- Only submissions from branches named after your name (e.g., monwabisi) will be accepted.
 
-- Ensure your code is well-documented and follows best practices.
+- Ensure your code is well-documented and follows best practices that we talked about.
 
 - If you encounter any issues, feel free to ask for help!
 ```
