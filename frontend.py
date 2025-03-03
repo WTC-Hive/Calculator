@@ -2,7 +2,7 @@ import flet as ft
 from backend import evaluate_expression
 
 def main(page: ft.Page):
-    page.title = "Calculator"
+    page.title = "Mbali's Calculator"
     page.vertical_alignment = "center"
     page.horizontal_alignment = "center"
     page.padding = 20
