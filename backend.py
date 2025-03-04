@@ -1,4 +1,5 @@
 import math
+#Do not make any other imports i.e DO NOT import re
 
 def add(a, b):
     """
@@ -95,5 +96,6 @@ def evaluate_expression(expression):
     Evaluate a mathematical expression using PEMDAS/BODMAS rules.
     The expression is a string, e.g., "3 / 7 * 8 % 3".
     This function will call other calculator functions in the correct order.
+    DO NOT USE THE eval() expression.
     """
     pass
